@@ -1,0 +1,15 @@
+<div class="my-4 d-flex justify-content-between">
+<% @letters.each do |letter|%>
+<span class="letter"><%= letter.upcase %></span>
+<% end %>
+</div>
+
+<form action="score" class="input-group mb-3" method="post">
+  <label for="answer" class="w-100 text-left">What is the longest word you can find?</label><br>
+  <input type="text" class="form-control" placeholder="Your answer" id="answer" name="answer">
+  <div class="input-group-append">
+    <input type="submit" value="Play!" class="btn btn-outline-secondary">
+  </div>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @letters %>
+</form>

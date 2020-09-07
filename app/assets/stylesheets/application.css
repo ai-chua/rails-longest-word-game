@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+.main-container {
+  width: 1000px;
+  margin: 3em auto;
+  padding: 1em;
+}
+
+.letter {
+  color: #f7f7f7;
+  background-color: #3598DB;
+  font-size: 24px;
+  padding: 0.2em 0.5em;
+  font-family: "Roboto Mono", monospace;
+  box-shadow: 3px 3px 3px #00000022;
+}
